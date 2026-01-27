@@ -32,8 +32,8 @@ class SheetTableSeeder extends Seeder
             ['id' => 15, 'column' => 5, 'row' => 'c'],
         ];
 
-        foreach ($seeds as $seed) {
-            DB::table('sheets')->insert($seed);
-        }
+        // foreach ($seeds as $seed) {
+        //     DB::table('sheets')->insert($seed);
+        // }
     }
 }
