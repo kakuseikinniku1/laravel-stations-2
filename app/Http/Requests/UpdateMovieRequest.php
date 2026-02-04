@@ -29,8 +29,8 @@ class UpdateMovieRequest extends FormRequest
             'image_url' => ['required', 'url'],
             'published_year' => ['required', 'gte:1900'],
             'description' => ['required'],
-            'is_showing' => ['required', 'boolean'],
-            'genre' => ['required'],
+            'is_showing' => ['required']
+            // 'genre' => ['required'],
         ];
     }
 }

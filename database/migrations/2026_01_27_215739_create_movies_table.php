@@ -20,8 +20,7 @@ class CreateMoviesTable extends Migration
             $table->integer("published_year")->comment("公開年");
             $table->tinyInteger("is_showing")->default(false)->comment("上映中かどうか");
             $table->text("description")->comment("概要");
-            $table->timestamp("created_at")->comment("登録日時");
-            $table->timestamp("updated_at")->comment("更新日時");
+            $table->timestamps();
         });
     }
 
